@@ -1,0 +1,21 @@
+#companyLogocontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#companyLogo {
+  padding: 2rem;
+}
+
+.sidebarIcon {
+  height: 3rem;
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sidebarIcon:hover {
+  opacity: 0.6;
+  color: blue;
+}
