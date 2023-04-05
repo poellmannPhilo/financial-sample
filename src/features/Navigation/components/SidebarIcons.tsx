@@ -12,18 +12,18 @@ import {
 export const SidebarIcons = () => {
   return (
     <div className="vertical-array center-align">
-      <BiShieldX size={40} color={"#eeeeee"} className={styles.sidebarIcon} />
-      <BiLineChart size={40} color={"#eeeeee"} className={styles.sidebarIcon} />
-      <BiEuro size={40} color={"#eeeeee"} className={styles.sidebarIcon} />
+      <BiShieldX size={30} color={"#eeeeee"} className={styles.sidebarIcon} />
+      <BiLineChart size={30} color={"#eeeeee"} className={styles.sidebarIcon} />
+      <BiEuro size={30} color={"#eeeeee"} className={styles.sidebarIcon} />
       <BiCreditCard
-        size={40}
+        size={30}
         color={"#eeeeee"}
         className={styles.sidebarIcon}
       />
-      <BiBot size={40} color={"#eeeeee"} className={styles.sidebarIcon} />
-      <BiAbacus size={40} color={"#eeeeee"} className={styles.sidebarIcon} />
+      <BiBot size={30} color={"#eeeeee"} className={styles.sidebarIcon} />
+      <BiAbacus size={30} color={"#eeeeee"} className={styles.sidebarIcon} />
       <BiNetworkChart
-        size={40}
+        size={30}
         color={"#eeeeee"}
         className={styles.sidebarIcon}
       />

@@ -77,8 +77,10 @@ export const RevenueChart = ({ width, height, data }: RidgelineProps) => {
       return (
         <path
           key={i}
+          // @ts-ignore
           d={path}
           transform={
+            // @ts-ignore
             "translate(0," + (groupScale(group.key) - DENSITY_BAND_HEIGHT) + ")"
           }
           fill="purple"
@@ -129,19 +131,27 @@ export const RevenueChart = ({ width, height, data }: RidgelineProps) => {
 };
 
 // Function to compute density
+// @ts-ignore
+
 function kernelDensityEstimator(kernel, X) {
+  // @ts-ignore
   return function (V) {
+    // @ts-ignore
     return X.map(function (x) {
       return [
         x,
         d3.mean(V, function (v) {
+          // @ts-ignore
           return kernel(x - v);
         }),
       ];
     });
   };
 }
+// @ts-ignore
 function kernelEpanechnikov(k) {
+  // @ts-ignore
+
   return function (v) {
     return Math.abs((v /= k)) <= 1 ? (0.75 * (1 - v * v)) / k : 0;
   };

@@ -7,7 +7,6 @@ export const CreditEvals = () => {
     <div>
       <div
         className="horizontal-array space-between"
-        style={{ marginLeft: "2rem", marginRight: "2rem" }}
       >
         <div className="horizontal-array">
           <h3>New Credit Score Evaluations</h3>

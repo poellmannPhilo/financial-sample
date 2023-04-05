@@ -4,7 +4,9 @@
 }
 
 .baseComponent {
+  border-radius: 2rem;
   border: 1px white solid;
+  padding: 2rem;
 }
 .sidebar {
   background-color: red;

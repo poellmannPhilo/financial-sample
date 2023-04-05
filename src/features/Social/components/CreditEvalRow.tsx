@@ -10,7 +10,10 @@ export const CreditEvalRow = ({ applicant }: { applicant: Applicant }) => {
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
-        marginRight: "1rem",
+        marginTop: "1rem",
+        padding: "0.5rem",
+        backgroundColor: "#535683",
+        borderRadius: "1rem",
       }}
     >
       <div
@@ -22,10 +25,16 @@ export const CreditEvalRow = ({ applicant }: { applicant: Applicant }) => {
           maxWidth: "80%",
         }}
       >
-        <Avatar src={applicant.imgPath}></Avatar>
-        <div>
-          <p>{applicant.firstName + " " + applicant.lastName}</p>
-          <p>
+        <Avatar src={applicant.imgPath} hasBorder={false}></Avatar>
+        <div
+          style={{
+            marginLeft: "1rem",
+          }}
+        >
+          <p style={{ fontWeight: "bold" }}>
+            {applicant.firstName + " " + applicant.lastName}
+          </p>
+          <p style={{ fontSize: "0.75rem" }}>
             {applicant.purchase.products.at(0)?.name +
               " and " +
               applicant.purchase.products.length +
